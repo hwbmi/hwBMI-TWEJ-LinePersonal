@@ -42,7 +42,7 @@
 
 <body id="body">
   <style>
-  
+
     .km-on-ios  .km-list > li {
         background-color: rgb(250,250,250);
         border-radius:10px;
@@ -51,14 +51,14 @@
 
     .km-on-ios .km-header .km-navbar
     {
-      background-color: red; /*darkslategray;*/
+      background-color: white; /*red;*/ /*darkslategray;*/
       /* deeppink; */
       font-size: 16px;
     }
 
     .km-on-ios .km-header .km-widget,
     .km-on-ios .km-header .km-view-title {
-      color: white;
+      color: black; /*white;*/
     }
 
     .km-on-android  .km-list > li {
@@ -69,14 +69,14 @@
 
     .km-on-android .km-header .km-navbar
     {
-      background-color: red; /*darkslategray;*/
+      background-color: white; /*red;*/ /*darkslategray;*/
       /* deeppink; */
       font-size: 16px;
     }
 
     .km-on-android .km-header .km-widget,
     .km-on-android .km-header .km-view-title {
-      color: white;
+      color: black; /*white;*/
     }
       
     .NotoSansFont {
@@ -128,7 +128,7 @@
     <header data-role="header">
       <div data-role="navbar" id="normal" class="km-accent">
 
-        <a data-align="right" data-role="button" href="#forms" data-rel="" data-icon="contacts"></a>
+        <a data-align="right" data-role="button" href="#forms" data-rel="" data-icon="contacts" style="color:black"></a>
         
         <span data-role="view-title"> </span>
 
@@ -243,8 +243,11 @@
   <div data-id="mainDiv" data-role="layout" data-show="showDemoLayout" data-hide="removeView">
     <header data-role="header">
       <div data-role="navbar" class="km-accent">
-        <a data-align="left" data-icon="arrow-w" href="#/" data-role="backbutton" data-transition="slide reverse"></a>
+        <a data-align="left" data-icon="arrow-w" href="#/" data-role="backbutton" data-transition="slide reverse" ></a>
         <span data-role="view-title"></span>
+        
+        <img src="./backbutton.png" height="40px" style="position:absolute; top: 10px; left:30px;"> 
+                
       </div>
     </header>
   </div>
