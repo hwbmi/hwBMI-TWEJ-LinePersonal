@@ -101,7 +101,16 @@ async function checkUserIdExist() {
     $("#formUserName").val(decodeURI(displayName[1]));
     $("#formUserName").attr("disabled", "disabled"); 
     $("#LINE頭像").attr("src", pictureUrl[1]);
-    $("#formHWBMI_ID").val(res.newId);    
+    
+    //避免同時註冊的人用到同一個 newId, 加上 timestamp 後 4 位
+    var timestamp = Date.now().toString();
+    var oneTofive=res.newId.substr(-5);
+    var newId = "5"+oneTofive+timestamp.substr(-4);
+    console.log(newId);
+    // 2022-07-25
+    
+    //$("#formHWBMI_ID").val(res.newId);    
+    $("#formHWBMI_ID").val(newId);    
     已經是會員 = false; 
     app.navigate('#forms'); 
     return;
