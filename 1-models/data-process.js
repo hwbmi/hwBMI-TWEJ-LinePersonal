@@ -1,7 +1,8 @@
 var isAndroid = kendo.support.mobileOS.android;
 
 //var apiSite = (useLocalAPIs)?'http://localhost:5000':'https://hwbmi-api.herokuapp.com/';
-var apiSite = (useLocalAPIs)?'http://localhost:5000':'https://twej-hwbmi.herokuapp.com/';
+//var apiSite = (useLocalAPIs)?'http://localhost:5000':'https://twej-hwbmi.herokuapp.com/';
+var apiSite = (useLocalAPIs)?'http://localhost:5000':'https://twej.makerkang.com/';
 console.log(apiSite);
 
 var measurementSource = new kendo.data.DataSource({
